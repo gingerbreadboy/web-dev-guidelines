@@ -3,13 +3,17 @@ This repository is created to guide developers for creating cleaner, faster and 
 
 
 #### for .WEBPs
-`<picture>
+```javascript
+<picture>
     <source srcset="" loading=“lazy” type="image/webp">
     <img src="" loading=“lazy” alt="">
-</picture>`
+</picture>
+```
 
 #### for .SVGs
-`<picture>
+```javascript
+<picture>
     <source type="image/svg+xml" loading="lazy" srcset="">
     <img src="" loading="lazy" alt="">
-</picture>`
+</picture>
+```
