@@ -7,6 +7,7 @@
     - [Project Information](#project-information)
     - [Serve images in next-gen formats](#serve-images-in-next-gen-formats)
     - [Efficiently encode images](#efficiently-encode-images)
+    - [Avoid an excessive DOM size](#avoid-an-excessive-dom-size)
 
 
 
@@ -46,3 +47,8 @@ __Samples of Image Compression Softwares__
 
 1. [Compressor.io](https://compressor.io)
 2. [Pixelled](https://pixelied.com/convert/png-converter/png-to-webp) _great tool for conversion! (you can use this for next-gen formats item)_
+
+
+### Avoid an excessive DOM size
+_excessive DOM size means that too many nodes and elements exist in your site, mostly caused by poor coding and deeply nested elements._
+this can result to slower page load times and leading to low page speed scores. You can prevent this problem by lessening the elements you use on initial coding and avoiding deeply nested elements causing bloated HTML.
