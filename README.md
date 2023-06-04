@@ -2,8 +2,8 @@
 
 ## Table of contents
 
-- [Web Development Guidelines](#web-development-guidelines)
-  - [Table of contents](#table-of-contents)
+  [Web Development Guidelines](#web-development-guidelines)
+  [Table of contents](#table-of-contents)
     - [Project Information](#project-information)
     - [Serve images in next-gen formats](#serve-images-in-next-gen-formats)
       - [for .WEBPs](#for-webps)
