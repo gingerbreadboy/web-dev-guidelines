@@ -49,6 +49,10 @@ __Samples of Image Compression Softwares__
 1. [Compressor.io](https://compressor.io)
 2. [Pixelled](https://pixelied.com/convert/png-converter/png-to-webp) _great tool for conversion! (you can use this for next-gen formats item)_
 
+___Problems that can also be fixed by resource compression:___
+
+1. Avoids enormous network payloads
+
 
 ### Avoid an excessive DOM size
 _excessive DOM size means that too many nodes and elements exist in your site, mostly caused by poor coding and deeply nested elements._
@@ -56,4 +60,4 @@ __this can result to slower page load times and leading to low page speed scores
 
 ### Defer offscreen images
 _Consider lazy-loading offscreen and hidden images after all critical resources have finished loading to lower time to interactive._
-__use loading="lazy" on image elements to load images to delay initialization of resources.__
+__use loading="lazy" on image elements to load images and to delay initialization of resources.__
