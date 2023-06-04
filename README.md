@@ -15,8 +15,11 @@ This repository is created to guide developers for creating cleaner, faster and 
 
 
 ### Serve images in next-gen formats
-Image formats like WebP and AVIF often provide better compression than PNG or JPEG, which means faster downloads and less data consumption.
+_Image formats like WebP and AVIF often provide better compression than PNG or JPEG, which means faster downloads and less data consumption._
+images should be converted to either .svg type or .webp type, as these types of images provide less data consumption and is easier to load.
 
+
+codes for developers:
 
 ___for .WEBPs___
 ```javascript
