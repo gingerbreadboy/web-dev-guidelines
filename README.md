@@ -6,8 +6,6 @@
   - [Table of contents](#table-of-contents)
     - [Project Information](#project-information)
     - [Serve images in next-gen formats](#serve-images-in-next-gen-formats)
-      - [for .WEBPs](#for-webps)
-      - [for .SVGs](#for-svgs)
 
 
 
@@ -20,7 +18,7 @@ This repository is created to guide developers for creating cleaner, faster and 
 Image formats like WebP and AVIF often provide better compression than PNG or JPEG, which means faster downloads and less data consumption.
 
 
-#### for .WEBPs
+___for .WEBPs___
 ```javascript
 <picture>
     <source srcset="" loading=“lazy” type="image/webp">
@@ -28,7 +26,7 @@ Image formats like WebP and AVIF often provide better compression than PNG or JP
 </picture>
 ```
 
-#### for .SVGs
+___for .SVGs___
 ```javascript
 <picture>
     <source type="image/svg+xml" loading="lazy" srcset="">
