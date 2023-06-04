@@ -43,4 +43,6 @@ _Optimized images load faster and consume less cellular data._
 compression of images is a vital practice for developing image-heavy sites. You can either use a plugin or a third-party image compressor to accomplish this.
 
 __Samples of Image Compression Softwares__
-[Compressor.io](https://compressor.io)
+
+1. [Compressor.io](https://compressor.io)
+2. [Pixelled](https://pixelied.com/convert/png-converter/png-to-webp) _great tool for conversion! (you can use this for next-gen formats item)_
