@@ -6,6 +6,7 @@
   - [Table of contents](#table-of-contents)
     - [Project Information](#project-information)
     - [Serve images in next-gen formats](#serve-images-in-next-gen-formats)
+    - [Efficiently encode images](#efficiently-encode-images)
 
 
 
@@ -36,3 +37,10 @@ ___for .SVGs___
     <img src="" loading="lazy" alt="">
 </picture>
 ```
+
+### Efficiently encode images
+_Optimized images load faster and consume less cellular data._
+compression of images is a vital practice for developing image-heavy sites. You can either use a plugin or a third-party image compressor to accomplish this.
+
+__Samples of Image Compression Softwares__
+[Compressor.io](https://compressor.io)
