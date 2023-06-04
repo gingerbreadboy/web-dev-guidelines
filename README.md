@@ -60,4 +60,4 @@ __this can result to slower page load times and leading to low page speed scores
 
 ### Defer offscreen images
 _Consider lazy-loading offscreen and hidden images after all critical resources have finished loading to lower time to interactive._
-__use loading="lazy" on image elements to load images and to delay initialization of resources.__
+__use `loading="lazy"` on image elements to load images and to delay initialization of resources.__
