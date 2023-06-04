@@ -8,6 +8,7 @@
     - [Serve images in next-gen formats](#serve-images-in-next-gen-formats)
     - [Efficiently encode images](#efficiently-encode-images)
     - [Avoid an excessive DOM size](#avoid-an-excessive-dom-size)
+    - [Defer offscreen images](#defer-offscreen-images)
 
 
 
@@ -18,7 +19,7 @@ This repository is created to guide developers for creating cleaner, faster and 
 
 ### Serve images in next-gen formats
 _Image formats like WebP and AVIF often provide better compression than PNG or JPEG, which means faster downloads and less data consumption._
-images should be converted to either .svg type or .webp type, as these types of images provide less data consumption and is easier to load.
+__images should be converted to either .svg type or .webp type, as these types of images provide less data consumption and is easier to load.__
 
 
 codes for developers:
@@ -41,7 +42,7 @@ ___for .SVGs___
 
 ### Efficiently encode images
 _Optimized images load faster and consume less cellular data._
-compression of images is a vital practice for developing image-heavy sites. You can either use a plugin or a third-party image compressor to accomplish this.
+compression of images is a vital practice for developing image-heavy sites. __You can either use a plugin or a third-party image compressor to accomplish this.__
 
 __Samples of Image Compression Softwares__
 
@@ -51,4 +52,8 @@ __Samples of Image Compression Softwares__
 
 ### Avoid an excessive DOM size
 _excessive DOM size means that too many nodes and elements exist in your site, mostly caused by poor coding and deeply nested elements._
-this can result to slower page load times and leading to low page speed scores. You can prevent this problem by lessening the elements you use on initial coding and avoiding deeply nested elements causing bloated HTML.
+__this can result to slower page load times and leading to low page speed scores. You can prevent this problem by lessening the elements you use on initial coding and avoiding deeply nested elements causing bloated HTML.__
+
+### Defer offscreen images
+_Consider lazy-loading offscreen and hidden images after all critical resources have finished loading to lower time to interactive._
+__use loading="lazy" on image elements to load images to delay initialization of resources.__
