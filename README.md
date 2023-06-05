@@ -23,7 +23,7 @@
     - [Document doesn't use legible font sizes](#document-doesnt-use-legible-font-sizes)
 
 # Metrics URL
-[https://pagespeed.web.dev/](PageSpeed Insights)
+__[PageSpeed Insights](https://pagespeed.web.dev/)__
 
 ## Project Information
 This repository is created to guide developers for creating cleaner, faster and optimized websites. Feel free to add items on this list.
