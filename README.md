@@ -14,7 +14,7 @@
     - [Reduce unused JavaScript](#reduce-unused-javascript)
     - [Image elements do not have explicit width and height](#image-elements-do-not-have-explicit-width-and-height)
   - [Accesibilty, Best Practices](#accesibilty-best-practices)
-  - [Browser errors were logged to the console](#browser-errors-were-logged-to-the-console)
+    - [Browser errors were logged to the console](#browser-errors-were-logged-to-the-console)
   - [SEO](#seo)
     - [Links are not crawlable](#links-are-not-crawlable)
     - [`<meta name="viewport">` tag with width or initial-scale](#meta-nameviewport-tag-with-width-or-initial-scale)
@@ -95,9 +95,9 @@ this part of the page speed insights usuually has high scores commpared to Perfo
 
 ___Note for designers:___
 
-for the problem __Background and foreground colors do not have a sufficient contrast ratio.__, Some people with low vision experience low contrast, meaning that there aren't very many bright or dark areas. Everything tends to appear about the same brightness, which makes it hard to distinguish outlines, borders, edges, and details. Text that is too close in luminance (brightness) to the background can be hard to read. citation from [https://dequeuniversity.com/rules/axe/4.7/color-contrast].
+for the problem __Background and foreground colors do not have a sufficient contrast ratio.__, Some people with low vision experience low contrast, meaning that there aren't very many bright or dark areas. Everything tends to appear about the same brightness, which makes it hard to distinguish outlines, borders, edges, and details. Text that is too close in luminance (brightness) to the background can be hard to read. citation from [Study reference on contrast](https://dequeuniversity.com/rules/axe/4.7/color-contrast).
 
-## Browser errors were logged to the console
+### Browser errors were logged to the console
 ensure no javaScript functions shown on the browser console. Also, make sure console logging functions (such as `console.log()`) are removed before releasing the site since these functions are for testing.
 
 ## SEO
