@@ -16,7 +16,7 @@
     - [Image elements do not have explicit width and height](#image-elements-do-not-have-explicit-width-and-height)
   - [Accesibilty, Best Practices](#accesibilty-best-practices)
     - [Browser errors were logged to the console](#browser-errors-were-logged-to-the-console)
-    - [Lists do not contain only  elements and script supporting elements](#lists-do-not-contain-only--elements-and-script-supporting-elements)
+    - [Lists do not contain only `<li>` elements and script supporting elements](#lists-do-not-contain-only-li-elements-and-script-supporting-elements)
   - [SEO](#seo)
     - [Links are not crawlable](#links-are-not-crawlable)
     - [`<meta name="viewport">` tag with width or initial-scale](#meta-nameviewport-tag-with-width-or-initial-scale)
@@ -102,7 +102,7 @@ for the problem __Background and foreground colors do not have a sufficient cont
 ### Browser errors were logged to the console
 ensure no javaScript functions shown on the browser console. Also, make sure console logging functions (such as `console.log()`) are removed before releasing the site since these functions are for testing.
 
-### Lists do not contain only <li> elements and script supporting elements
+### Lists do not contain only `<li>` elements and script supporting elements
 for this one, avoid inserting elements inside `<ul>` or `<ol>` other than `<li>`. developers tend to add formatting elements such as `<br>` inside of list-type anchor tags. if this problem is encountered (`<li>` tags seems to behave and position themselves side by side), set `<li>` attribute to `display: block;` to occupy remaining spaces between.
 
 ## SEO
@@ -117,3 +117,6 @@ essential for browsers to read your media queries. Please include this at all ti
 ### Document doesn't use legible font sizes
 ___Note for designers:___
 avoid using font sizes smmaller than 12px if possible, as users needs to pinch the screen to zoom the screen on mobile which causes poor UX. 60% of the pages' texts should have a font size of 12px and above.
+
+
+___Feel free to add items here.___
