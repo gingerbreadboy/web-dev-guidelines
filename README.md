@@ -12,7 +12,13 @@
     - [Defer offscreen images](#defer-offscreen-images)
     - [Problems that can be solved by WP Rocket](#problems-that-can-be-solved-by-wp-rocket)
     - [Reduce unused JavaScript](#reduce-unused-javascript)
-    - [Image elements do not have explicit width and height.](#image-elements-do-not-have-explicit-width-and-height)
+    - [Image elements do not have explicit width and height](#image-elements-do-not-have-explicit-width-and-height)
+  - [Accesibilty, Best Practices](#accesibilty-best-practices)
+  - [Browser errors were logged to the console](#browser-errors-were-logged-to-the-console)
+  - [SEO](#seo)
+    - [Links are not crawlable](#links-are-not-crawlable)
+    - [`<meta name="viewport">` tag with width or initial-scale](#meta-nameviewport-tag-with-width-or-initial-scale)
+    - [Document uses legible font sizes](#document-uses-legible-font-sizes)
 
 
 
@@ -54,7 +60,7 @@ __Samples of Image Compression Softwares__
 1. [Compressor.io](https://compressor.io)
 2. [Pixelled](https://pixelied.com/convert/png-converter/png-to-webp) _great tool for conversion! (you can use this for next-gen formats item)_
 
-___Problems that can also be fixed by resource compression:___
+___Related problems:___
 
 1. Avoids enormous network payloads
 
@@ -79,6 +85,30 @@ ___Related Problems:___
 
 1. Reduce the impact of third-party code
 
-### Image elements do not have explicit width and height.
+### Image elements do not have explicit width and height
 
-Properly add width and height attributes to images throughout the website. if not applicable, you can use `aspect-ratio:` tag for your images. Check [caniuse.com](https://caniuse.com/mdn-css_properties_aspect-ratio) to know the browsers currently supporting the atrribute.
+Properly add width and height attributes to images throughout the website. if not applicable, you can use `aspect-ratio:` css attribute for your images. Check [caniuse.com](https://caniuse.com/mdn-css_properties_aspect-ratio) to know the browsers currently supporting the atrribute.
+
+
+## Accesibilty, Best Practices
+this part of the page speed insights usuually has high scores commpared to Performance and SEO, so we will only note important elements to fix.
+
+___Note for designers:___
+
+for the problem __Background and foreground colors do not have a sufficient contrast ratio.__, Some people with low vision experience low contrast, meaning that there aren't very many bright or dark areas. Everything tends to appear about the same brightness, which makes it hard to distinguish outlines, borders, edges, and details. Text that is too close in luminance (brightness) to the background can be hard to read. citation from [https://dequeuniversity.com/rules/axe/4.7/color-contrast].
+
+## Browser errors were logged to the console
+ensure no javaScript functions shown on the browser console. Also, make sure console logging functions (such as `console.log()`) are removed before releasing the site since these functions are for testing.
+
+## SEO
+These checks ensure that your page is following basic search engine optimization advice.
+
+### Links are not crawlable
+Search engines may use href attributes on links to crawl websites. Ensure that the href attribute of anchor elements links to an appropriate destination, so more pages of the site can be discovered. ___avoid `<a href="">` without links as Google metrics crawl most of the link tags of the site. you can use `cursor: pointer;` css attribute to provide clickable appearance for non-redirecting buttons___
+
+### `<meta name="viewport">` tag with width or initial-scale
+essential for browsers to read your media queries. Please include this at all times.
+
+### Document uses legible font sizes
+___Note for designers:___
+avoid using font sizes smmaller than 12px if possible, as users needs to pinch the screen to zoom the screen on mobile which causes poor UX.
