@@ -4,18 +4,23 @@
 
 - [Web Development Guidelines](#web-development-guidelines)
   - [Table of contents](#table-of-contents)
-    - [Project Information](#project-information)
+  - [Project Information](#project-information)
+  - [Performance](#performance)
     - [Serve images in next-gen formats](#serve-images-in-next-gen-formats)
     - [Efficiently encode images](#efficiently-encode-images)
     - [Avoid an excessive DOM size](#avoid-an-excessive-dom-size)
     - [Defer offscreen images](#defer-offscreen-images)
+    - [Problems that can be solved by WP Rocket](#problems-that-can-be-solved-by-wp-rocket)
+    - [Reduce unused JavaScript](#reduce-unused-javascript)
+    - [Image elements do not have explicit width and height.](#image-elements-do-not-have-explicit-width-and-height)
 
 
 
 
-### Project Information
+## Project Information
 This repository is created to guide developers for creating cleaner, faster and optimized websites. Feel free to add items on this list.
 
+## Performance
 
 ### Serve images in next-gen formats
 _Image formats like WebP and AVIF often provide better compression than PNG or JPEG, which means faster downloads and less data consumption._
@@ -61,3 +66,19 @@ __this can result to slower page load times and leading to low page speed scores
 ### Defer offscreen images
 _Consider lazy-loading offscreen and hidden images after all critical resources have finished loading to lower time to interactive._
 __use `loading="lazy"` on image elements to load images and to delay initialization of resources.__
+
+### Problems that can be solved by WP Rocket
+_problems stated below can be fixed by WP Rocket Plugin on WordPress_
+1. Minify CSS
+1. Minify JavaScript
+
+### Reduce unused JavaScript
+remove unused javaScript. for this item, there's nothing you can do since most of the time, this problem is caused by the GTM tags.
+
+___Related Problems:___
+
+1. Reduce the impact of third-party code
+
+### Image elements do not have explicit width and height.
+
+Properly add width and height attributes to images throughout the website. if not applicable, you can use `aspect-ratio:` tag for your images. Check [caniuse.com](https://caniuse.com/mdn-css_properties_aspect-ratio) to know the browsers currently supporting the atrribute.
