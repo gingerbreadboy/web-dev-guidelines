@@ -4,7 +4,7 @@
 
 - [Web Development Guidelines](#web-development-guidelines)
   - [Table of contents](#table-of-contents)
-- [Metrics URL](#metrics-url)
+- [Metrics URL (PageSpeed Insights)](#metrics-url-pagespeed-insights)
   - [Project Information](#project-information)
   - [Performance](#performance)
     - [Serve images in next-gen formats](#serve-images-in-next-gen-formats)
@@ -22,7 +22,7 @@
     - [`<meta name="viewport">` tag with width or initial-scale](#meta-nameviewport-tag-with-width-or-initial-scale)
     - [Document doesn't use legible font sizes](#document-doesnt-use-legible-font-sizes)
 
-# Metrics URL
+# Metrics URL (PageSpeed Insights)
 __[PageSpeed Insights](https://pagespeed.web.dev/)__
 
 ## Project Information
