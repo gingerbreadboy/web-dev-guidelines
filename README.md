@@ -14,7 +14,7 @@
     - [Problems that can be solved by WP Rocket](#problems-that-can-be-solved-by-wp-rocket)
     - [Reduce unused JavaScript](#reduce-unused-javascript)
     - [Image elements do not have explicit width and height](#image-elements-do-not-have-explicit-width-and-height)
-  - [Accesibilty, Best Practices](#accesibilty-best-practices)
+  - [Accesibility, Best Practices](#accesibility-best-practices)
     - [Browser errors were logged to the console](#browser-errors-were-logged-to-the-console)
     - [Lists do not contain only `<li>` elements and script supporting elements](#lists-do-not-contain-only-li-elements-and-script-supporting-elements)
   - [SEO](#seo)
@@ -92,8 +92,8 @@ ___Related Problems:___
 Properly add width and height attributes to images throughout the website. if not applicable, you can use `aspect-ratio:` css attribute for your images. Check [caniuse.com](https://caniuse.com/mdn-css_properties_aspect-ratio) to know the browsers currently supporting the atrribute.
 
 
-## Accesibilty, Best Practices
-this part of the page speed insights usuually has high scores commpared to Performance and SEO, so we will only note important elements to fix.
+## Accesibility, Best Practices
+this part of the page speed insights usually has high scores compared to Performance and SEO, so we will only note important elements to fix.
 
 ___Note for designers:___
 
