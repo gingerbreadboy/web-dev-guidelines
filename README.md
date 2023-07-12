@@ -14,9 +14,11 @@
     - [Problems that can be solved by WP Rocket](#problems-that-can-be-solved-by-wp-rocket)
     - [Reduce unused JavaScript](#reduce-unused-javascript)
     - [Image elements do not have explicit width and height](#image-elements-do-not-have-explicit-width-and-height)
+    - [eliminate render blocking images](#eliminate-render-blocking-images)
   - [Accesibility, Best Practices](#accesibility-best-practices)
     - [Browser errors were logged to the console](#browser-errors-were-logged-to-the-console)
     - [Lists do not contain only `<li>` elements and script supporting elements](#lists-do-not-contain-only-li-elements-and-script-supporting-elements)
+    - [Youtube embed unused (site slow because of youtube embed)](#youtube-embed-unused-site-slow-because-of-youtube-embed)
   - [SEO](#seo)
     - [Links are not crawlable](#links-are-not-crawlable)
     - [`<meta name="viewport">` tag with width or initial-scale](#meta-nameviewport-tag-with-width-or-initial-scale)
@@ -91,6 +93,12 @@ ___Related Problems:___
 
 Properly add width and height attributes to images throughout the website. if not applicable, you can use `aspect-ratio:` css attribute for your images. Check [caniuse.com](https://caniuse.com/mdn-css_properties_aspect-ratio) to know the browsers currently supporting the atrribute.
 
+### eliminate render blocking images
+
+___for CSS:___
+format your CSS link anchor tag with this format:
+`<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet" type="text/css" media="print" onload="this.media='all'" />`
+
 
 ## Accesibility, Best Practices
 this part of the page speed insights usually has high scores compared to Performance and SEO, so we will only note important elements to fix.
@@ -104,6 +112,10 @@ ensure no javaScript functions shown on the browser console. Also, make sure con
 
 ### Lists do not contain only `<li>` elements and script supporting elements
 for this one, avoid inserting elements inside `<ul>` or `<ol>` other than `<li>`. developers tend to add formatting elements such as `<br>` inside of list-type anchor tags. if this problem is encountered (`<li>` tags seems to behave and position themselves side by side), set `<li>` attribute to `display: block;` to occupy remaining spaces between.
+
+### Youtube embed unused (site slow because of youtube embed)
+YouTube IFrame is usually slowing down the site speed, so customizing the attributes of the IFrame will remove the errors on page speed insights.
+[Youtube iFrame Generator](https://tube.rvere.com/)
 
 ## SEO
 These checks ensure that your page is following basic search engine optimization advice.
