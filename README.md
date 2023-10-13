@@ -92,8 +92,7 @@ ___Related Problems:___
 
 ### Image elements do not have explicit width and height
 
-Properly add width and height attributes to images throughout the website. you can add `width` and `height` attributes on `<img>` tags. 
-Example:
+Properly add width and height attributes to images throughout the website. you can add `width` and `height` attributes on `<img>` tags.
 
 `<img src="assets/img/photo.jpg" alt="image name" width="230" height="100">`
 
@@ -103,13 +102,7 @@ Check [caniuse.com](https://caniuse.com/mdn-css_properties_aspect-ratio) to know
 
 ___for CSS:___
 format your CSS link anchor tag with this format:
-``` javascript
-    <link rel="preload" 
-          href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;600&display=swap" 
-          as="style" 
-          onload="this.onload=null;this.rel='stylesheet'" 
-    />
-```
+`<link rel="preload" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;600&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'" />`
 
 
 ## Accesibility, Best Practices
