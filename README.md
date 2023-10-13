@@ -12,6 +12,7 @@
     - [Avoid an excessive DOM size](#avoid-an-excessive-dom-size)
     - [Defer offscreen images](#defer-offscreen-images)
     - [Problems that can be solved by WP Rocket](#problems-that-can-be-solved-by-wp-rocket)
+    - [Reduce unused CSS](#reduce-unused-css)
     - [Reduce unused JavaScript](#reduce-unused-javascript)
     - [Image elements do not have explicit width and height](#image-elements-do-not-have-explicit-width-and-height)
     - [eliminate render blocking images](#eliminate-render-blocking-images)
@@ -88,6 +89,9 @@ __use `loading="lazy"` on image elements to load images and to delay initializat
 _problems stated below can be fixed by WP Rocket Plugin on WordPress_
 1. Minify CSS
 1. Minify JavaScript
+
+### Reduce unused CSS
+You can also minify your CSS by removing the line-breaks and whitespaces of your CSS file. If you're using SASS with VS Code, you can set the type of compression from `expanded` to `compressed`.
 
 ### Reduce unused JavaScript
 remove unused javaScript. for this item, there's nothing you can do since most of the time, this problem is caused by the GTM tags.
