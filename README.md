@@ -101,7 +101,7 @@ Check [caniuse.com](https://caniuse.com/mdn-css_properties_aspect-ratio) to know
 ### eliminate render blocking images
 
 ___for CSS:___
-format your CSS link anchor tag with this format:
+format your CSS link anchor tag with this format:  
 `<link rel="preload" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;600&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'" />`
 
 
